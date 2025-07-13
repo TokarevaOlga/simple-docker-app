@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: springboot-k8s-example:1.0
+          image: tokarevaolga/springboot-k8s-example:1.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
@@ -30,6 +30,6 @@ spec:
     app: spring-boot-k8s
   ports:
     - protocol: "TCP"
-      port: 8080
+      port: 8083
       targetPort: 8080
   type: NodePort
